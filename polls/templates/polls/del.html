@@ -1,0 +1,8 @@
+<h1>Are you sure?</h1>
+<p>Wanna delete the question "{{ question.question_text }}" </p>
+<form method='POST' action="">
+    {% csrf_token %}
+    <input type="submit" value="Yes, sure!" name="Yes"/>
+    <input type="submit" value="No, take me back!" name="No"/>
+</form>
+

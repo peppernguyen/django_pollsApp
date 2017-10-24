@@ -1,0 +1,16 @@
+<h1>Edit question</h1>
+
+<form action="" method="post">
+    {% csrf_token %}
+    <div>
+
+        <label for="quetsion">Question: </label>
+        <input type="text" name="question" value="{{ question.question_text }}">
+        <br>
+        <label for="quetsion">Published_date: </label>
+        <input type="text" name="pubdate" value="{{ question.pub_date }}">
+    </div>
+    <br>
+    <input type="submit" value="Update" name="update">
+    <input type= "submit" value="Home" name="home">
+</form>

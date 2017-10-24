@@ -1,0 +1,12 @@
+<h1>Add new question</h1>
+{% if question %}
+    <p>Successfully added new question {{ question }}</p>
+{% endif %}
+<form action="." method="post">
+    {% csrf_token %}
+    Type a question:<br>
+    <input type="text" name="question">
+    <br>
+    <input type="submit" value="Submit" name="submit">
+    <input type="submit" value="Home" name="home">
+</form>
